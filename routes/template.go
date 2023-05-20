@@ -16,8 +16,7 @@ import (
 var TmplFiles *embed.FS
 
 func readTemplate(d *deps) *template.Template {
-
-	if d.c.Dirs.Templates != "" {
+	if !d.c.Dirs.UseEmbeddedTemplates {
 		//read from file system
 		tpath := filepath.Join(d.c.Dirs.Templates, "*")
 		return template.Must(template.ParseGlob(tpath))

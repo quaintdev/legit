@@ -34,7 +34,7 @@ pre {
 }
 
 body {
-  max-width: 750px;
+  max-width: 950px;
   padding: 0 13px;
   margin: 40px auto;
 }
@@ -103,7 +103,7 @@ a:hover {
 .index {
   padding-top: 2em;
   display: grid;
-  grid-template-columns: 6em 1fr minmax(0, 7em);
+  grid-template-columns: 12em 1fr minmax(0, 7em);
   grid-row-gap: 0.5em;
   min-width: 0;
 }
